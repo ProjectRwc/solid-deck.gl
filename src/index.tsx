@@ -1,9 +1,9 @@
 import { Deck, DeckProps } from '@deck.gl/core/typed';
 import { JSX, createEffect, onMount, splitProps } from 'solid-js';
 
-export type SolidDeckProps = Omit<DeckProps, 'container' | 'canvas' | 'style'> & {
-    width?: string;
-    height?: string;
+export type SolidDeckProps = Omit<DeckProps, 'container' | 'canvas' | 'style' | 'width' | 'height'> & {
+    width?: number;
+    height?: number;
     style?: JSX.CSSProperties;
 };
 
